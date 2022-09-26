@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!--^icons-->
+    <script src="https://kit.fontawesome.com/63f6a58a2b.js" crossorigin="anonymous"></script>
+    <!--dimensions responsive to devices-->
+    <title>VillaNguyen Wedding Home</title>
+    <link rel = "stylesheet" href="style.css"> 
+    <!-- ^Linking CSS file -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="http://fonts.cdnfonts.com/css/morfelan" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <!--^linking popping fonts^-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+<body class="main">
+    <section class="header">
+      <nav>
+      <div class="ascent"> 
+        <p>Our ascent into Mt. Olympus begins:</p>
+        <p class="timer" id="demo"></p>
+      </div>
+      <a href="index.html"> <img src=""></a>
+      <div class="nav-links" id="navLinks">
+          <i class="fa fa-times"  onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Heroes.html" target="_blank">The Heroes</a></li>
+                <li><a href="Gallery.html" target="_blank">Gallery</a></li>
+                <li><a href="https://www.amazon.com/wedding/joshua-villanueva-judy-nguyen--february-2024/registry/3MQVXNKAI25KC" target="_blank">Registry</a></li>
+                <li><a href="Schedule.html" target="_blank">Schedule</a></li>
+                <li><a href="FAQ.html" target="_blank">FAQ</a></li>
+            </ul>
+      </div>
+      <i class="fa fa-bars" id="menuBars" onclick="showMenu()"></i>
+      </nav>
+        
+    </section>
+
+    
+
+    <footer class="social-footer">
+        <div class="social-footer-logo">
+          <a href="index.html"><img class="logo" src=""></a>
+        </div>
+        <div class="social-footer-icons">
+          <ul class="menu simple">
+            <!--<li><a href="" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <li><a href="" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>-->
+            <li><a href="https://twitter.com/JuJoWedding?ref_src=twsrc%5Etfw" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+      </footer>
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+    var menuBars = document.getElementById("menuBars")
+    function showMenu(){
+        navLinks.style.right ="0";
+        menuBars.style.display = "none";
+    }
+    function hideMenu(){
+        menuBars.style.display = "block";
+        navLinks.style.right = "-200px";
+        
+    }
+
+</script>
+
+<script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Feb 25, 2024 15:30:00").getTime();
+    
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+    
+      // Get today's date and time
+      var now = new Date().getTime();
+    
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+    
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+      // Display the result in the element with id="demo"
+      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+    
+      // If the count down is finished, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "WEDDING TIME!";
+      }
+    }, 1000);
+    </script>
+
+
+</body>
+</html>
