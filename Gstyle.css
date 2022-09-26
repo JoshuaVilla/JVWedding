@@ -137,6 +137,9 @@ nav .fa{
     transition: color 0.3s ease-in;
   }
 @media only screen and (max-width: 769px){
+    .main{
+        background-size: contain;
+    }
     .container .box{
         display: flex;
         flex-direction: column;
