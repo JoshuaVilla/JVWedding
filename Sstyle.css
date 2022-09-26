@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Syncopate', sans-serif;
+}
+.main{
+  background-image: linear-gradient(rgba(4, 9, 30, 0.438),rgba(4, 9, 30, 0.438)),url(Images/Sched_BG.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.header{
+  min-height: 100vh;
+  width: 100%;
+}
+/*NAVIGATION*/
+nav{
+  padding: .79rem;
+  background-color: gray;
+  background: gray;
+  opacity: 80%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+nav img{
+  width: 100px;
+}
+.nav-links{
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 3px 16.4px;
+  position: relative;
+}
+.nav-links ul li a{
+  font-family: 'Syncopate', sans-serif;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.nav-links ul li a:hover{
+  color: gold;
+  transition: color 0.5s ease-in;
+}
+nav .fa{
+  display: none;
+}
+.heading{
+    text-align: center;
+}
+.heading h1{
+  margin: 100px auto;
+  color: #fff;
+  text-align: center;
+  font-size: 3em;
+  max-width: 600px;
+  position: relative;
+}
+
+.heading h1:before {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 2px;
+    background: #fff;
+    left: 0;
+    top: 50%;
+    position: absolute;
+  }
+  
+  .heading h1:after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 2px;
+    background: #fff;
+    right: 0;
+    top: 50%;
+    position: absolute;
+  }
+
+.twitter-container{
+    width: 50%;
+    min-height: 100vh;
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 0;
+    padding: 75px;
+    background-size: auto;
+}
+.twitter-container .container-title h1{
+  color: #fff;
+    font-family: 'Anthony Hunters', sans-serif;
+    font-size: 40px;
+    text-align: left;
+    text-decoration: underline;
+    padding: 1px;
+}
+.twitter-container .twitter-timeline{
+    
+    display: flex;
+    align-content: center;
+    position: relative;
+}
+
+.social-footer {
+  padding: 1rem;
+  background: gray;
+  opacity: 80%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.social-footer .social-footer-logo img {
+  margin: 0 0;
+  width: 50px;
+}
+.social-footer .social-footer-icons ul li{
+  display: inline-block;
+  margin: 0 3px;
+  list-style: none;
+}
+.social-footer .social-footer-icons li:last-of-type{
+  margin-right: 0;
+}
+
+.social-footer .social-footer-icons .fa{
+  font-size: 1.3rem;
+  color: #fefefe;
+}
+
+.social-footer .social-footer-icons .fa:hover{
+  color: gold;
+  transition: color 0.3s ease-in;
+}
+@media(max-width: 900px){
+  .nav-links ul li{
+      display: block;
+  }
+  .nav-links{
+      position: absolute;
+      background:#252523;
+      height: 100vh;
+      width: 200px;
+      top: 0;
+      right: -200px;
+      text-align: left;
+      z-index: 2;
+      opacity: 80%;
+      transition: 1s;
+  }
+  nav .fa{
+      display:block;
+      color: #fff;
+      margin: 10px;
+      font-size: 22px;
+      cursor: pointer;
+  }
+  .nav-links ul{
+      padding: 30px;
+  }
+
+
+}

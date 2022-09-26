@@ -1,10 +1,3 @@
-@font-face {
-    font-family: 'MORFELAN';
-    src: url(./Fonts/Morfelan-1G1gM.otf);
-    font-weight: normal;
-    font-style: normal;
-}
-
 *{
     margin: 0;
     padding: 0;
@@ -13,9 +6,9 @@
 
 }
 .main{
-    background-image: linear-gradient(rgba(4, 9, 30, 0.438),rgba(4, 9, 30, 0.438)),url(Images/TheOne_Index.jpg);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.438),rgba(4, 9, 30, 0.438)),url(Images/Sched_BG.jpg);
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     position: relative;
 }
 .header{
@@ -55,7 +48,7 @@ nav img{
 .nav-links ul li{
     list-style: none;
     display: inline-block;
-    padding: 3px 20px;
+    padding: 3px 16.4px;
     position: relative;
 }
 .nav-links ul li a{
@@ -86,10 +79,9 @@ nav .fa{
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: 'MORFELAN';
 }
 .ascent p{
-    font-family: 'MORFELAN';
+    font-family: 'MORFELAN', sans-serif;
     text-align: center;
 }
 .timer{
