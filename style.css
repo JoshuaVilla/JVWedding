@@ -1,4 +1,9 @@
-@import url('http://fonts.cdnfonts.com/css/morfelan');
+@font-face {
+    font-family: 'MORFELAN';
+    src: url(./Fonts/Morfelan-1G1gM.otf);
+    font-weight: normal;
+    font-style: normal;
+}
 
 *{
     margin: 0;
@@ -83,7 +88,7 @@ nav .fa{
     transform: translate(-50%, -50%);
 }
 .ascent p{
-    font-family: 'MORFELAN', sans-serif;
+    font-family: 'MORFELAN';
     text-align: center;
 }
 .timer{
