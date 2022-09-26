@@ -83,7 +83,7 @@ nav .fa{
 .ascent p{
     @font-face {
         font-family: PenumbraHalfSerif;
-        src: url(../JVWedding/Fonts/PenumbraHalfSerif.ttf);
+        src: url(Fonts/PenumbraHalfSerif.ttf);
     }
     text-align: center;
 }
