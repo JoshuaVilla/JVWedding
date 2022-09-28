@@ -6,9 +6,8 @@
 }
 .main{
     background-image: linear-gradient(rgba(4, 30, 4, 0.295),rgba(4, 30, 4, 0.295)),url(Images/Wed_BG.jpg);
-    background-position: center;
-    background-size: cover;
-    position: relative;
+    background-size: contain;
+    background-repeat: repeat;
 }
 .container{
     width: 100%;
