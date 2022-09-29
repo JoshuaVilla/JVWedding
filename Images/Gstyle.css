@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Syncopate', sans-serif;
+}
+.main{
+    background-image: linear-gradient(rgba(4, 30, 4, 0.295),rgba(4, 30, 4, 0.295)),url(Images/Wed_BG.jpg);
+    background-size: contain;
+    background-repeat: repeat;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 50px 8%;
+    
+}
+.container .heading img{
+    align-items: left;
+}
+.container .heading{
+    width: 50%;
+    padding-bottom: 50px ;
+}
+.container .heading h3{
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: whitesmoke;
+    font-size: 3.2em;
+    font-weight: 100;
+    padding-bottom: 10px;
+    border-bottom: 3px solid white;
+
+}
+.container .heading h3 span{
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: whitesmoke;
+    font-weight: 100;
+}
+.container .box{
+    display: grid;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.box{
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+.box img{
+    width: 100%;
+}
+
+@media only screen and (max-width: 769px){
+    .container .box{
+        display: flex;
+        flex-direction: column;
+    }
+    .container .heading{
+        width: 100%;
+    }
+    .container .heading h3{
+        font-size:  2em;
+    }
+    
+}
+/*****************NAVIGATION********************/
+nav{
+    background: #222;
+    padding: 3px 20px;
+    background: gray;
+    opacity: 80%;
+    position: relative;
+    z-index: 2 !important;
+    transition: 2s !important;
+    
+}
+ul{
+    list-style-type: none;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: gold;
+    transition: color 0.5s ease-in;
+}
+.menu li{
+    font-size: 16px;
+    padding: 15px 5px;
+}
+.menu li a{
+    display: block;
+    color: #fff;
+    font-family: 'Syncopate', sans-serif;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+.menu li a:hover{
+    color: gold;
+    transition: color 0.5s ease-in;
+}
+/* Mobile Menu */
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.toggle{
+    order: 1;
+}
+.item{
+    width: 100%;
+    text-align: center;
+    order: 2;
+    display: none;
+}
+.item.active{
+    display: block;
+}
+
+
+@media(min-width:468px){
+    .menu{
+        justify-content: center;
+    }
+    .logo{
+        flex: 1;
+    }
+    .item.button{
+        width: auto;
+        order: 1;
+        display: block;
+    }
+
+    .toggle{
+        order: 2;
+    }
+    main article p{
+        font-size: 50px;
+    }
+    
+}
+
+@media(min-width: 768px) {
+    .item{
+        display: block;
+        width: auto;
+    }
+    .toggle{
+        display: none;
+    }
+    .logo{
+        order: 0;
+    }
+    .item{
+        order: 1;
+    }
+    .menu li{
+        padding: 15px 10px;
+    }
+    .menu li.button{
+        padding-right: 0;
+    }
+}
+
+
+.toggle{
+cursor: pointer;
+}
+.bars{
+    background: #fff;
+    display: inline-block;
+    height: 3px;
+    position: relative;
+    width: 18px;
+}
+.bars::before,.bars::after{
+    background: #fff;
+    content:"";
+    display: inline-block;
+    height: 3px;
+    position: absolute;
+    width: 18px;
+}
+.bars::before{
+    top: 5px;
+}
+.bars::after{
+    top: -5px;
+}
+
+/********** Footer **************/
+.social-footer{
+    padding: 1rem;
+    background: gray;
+    opacity: 80%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.social-footer .social-footer-logo img{
+    margin: 0 0;
+    width: 50px;
+}
+.social-footer .social-footer-icons ul li{
+display: inline-block;
+margin: 0 3px;
+list-style: none;
+}
+.social-footer .social-footer-icons li:last-of-type{
+margin-right: 0;
+}
+
+.social-footer .social-footer-icons .fa{
+font-size: 1.3rem;
+color: #fefefe;
+}
+
+.social-footer .social-footer-icons .fa:hover{
+color: gold;
+transition: color 0.3s ease-in;
+}
+
+/*********************BG*****************/
+body{
+    background-image: linear-gradient(rgba(4, 9, 30, 0.438),rgba(4, 9, 30, 0.438)),url(Images/TheOne_Index.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/****************MAIN********************/
+main{
+    width: 90vw;
+    margin: 0 auto;
+    padding: 30px 20px;
+    min-height: calc(100vh - 54px - 62px);
+    
+}
