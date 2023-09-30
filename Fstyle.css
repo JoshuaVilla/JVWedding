@@ -4,7 +4,7 @@
     margin: 0;
 }
 body{
-    font-family: sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 /*****************NAVIGATION********************/
 nav{
@@ -34,10 +34,10 @@ a:hover{
 .menu li a{
     display: block;
     color: #fff;
-    font-family: 'Syncopate', sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     text-decoration: none;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: thin;
 }
 .menu li a:hover{
     color: gold;
@@ -187,21 +187,54 @@ main{
     color:gold;
     text-align: center;
     align-items: center;
-    margin-top: 5px;
+    margin-top: 150px;
     opacity: 90%;
     text-shadow: 3px 3px black;
     z-index: 1;
     position: absolute;
     top: 40%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -30%);
     width: 75%;
+    padding-bottom: 100px;
+}
+.ascent cc{
+    text-align: center;
+    z-index: 1 !important;
+    font-size: 50px;
 }
 .ascent p{
     text-align: center;
     z-index: 1 !important;
-    font-size: 35px;
+    font-size: 40px;
 }
+.ascent dd{
+    text-align: center;
+    font-size: 24px;
+}
+
+.heading h1:before {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 2px;
+    background: #fff;
+    
+    top: 50%;
+    position: absolute;
+  }
+  
+  .heading h1:after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 2px;
+    background: #fff;
+    right: 0;
+    top: 50%;
+    position: absolute;
+  }
+
 .timer{
     color:gold;
     font-family:'Times New Roman', Times, serif;

@@ -2,12 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
+        font-family: 'Times New Roman', Times, serif;
+
 }
 .main{
-    background-image: linear-gradient(rgba(4, 30, 4, 0.295),rgba(4, 30, 4, 0.295)),url(Images/Wed_BG.jpg);
-    background-size: contain;
-    background-repeat: repeat;
+    background-image: linear-gradient(rgba(4, 30, 4, 0.295),rgba(4, 30, 4, 0.295)),url(Images/Sched_BG.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .container{
     width: 100%;
@@ -25,20 +26,21 @@
 }
 .container .heading{
     width: 50%;
-    padding-bottom: 50px ;
+    padding-bottom: 25px ;
 }
 .container .heading h3{
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    color: black;
-    font-size: 3.2em;
+    color: goldenrod;
+    font-size: 2.5em;
     font-weight: 100;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     border-bottom: 3px solid black;
+    margin-top: 0px;
 
 }
 .container .heading h3 span{
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    color: black;
+    color: goldenrod;
     font-weight: 100;
 }
 .container .box{
@@ -53,6 +55,16 @@
 }
 .box img{
     width: 100%;
+}
+
+.resButton{
+    background-color: #616161;
+    color: white;
+    padding: 5px 150px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
 }
 
 @media only screen and (max-width: 769px){

@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Syncopate', sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 .main{
   background-image: linear-gradient(rgba(4, 9, 30, 0.438),rgba(4, 9, 30, 0.438)),url(Images/Sched_BG.jpg);
@@ -43,10 +43,10 @@ a:hover{
 .menu li a{
   display: block;
   color: #fff;
-  font-family: 'Syncopate', sans-serif;
+  font-family: 'Times New Roman', Times, serif;
   text-decoration: none;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: thin;
 }
 .menu li a:hover{
   color: gold;
@@ -201,7 +201,7 @@ main{
     text-align: center;
 }
 .heading h1{
-  margin: 100px auto;
+  margin: 10px auto;
   color: #fff;
   text-align: center;
   font-size: 3em;
@@ -231,30 +231,20 @@ main{
     position: absolute;
   }
 
-.twitter-container{
-    width: 100%;
-    min-height: 100vh;
-    display: inline-block;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    border-radius: 0;
-    padding: 75px;
-    background-size: auto;
-}
-.twitter-container .container-title h1{
-  color: #fff;
-    font-family:'Edwardian Script ITC';
-    font-size: 5vh;
-    text-align: center;
-    text-decoration: underline;
-    padding: 1px;
-}
-.twitter-container .twitter-timeline{
+  main{
+    width: 90vw;
+    margin: 0 auto;
+    padding: 30px 20px;
+    min-height: calc(100vh - 54px - 62px);
     
-    display: flex;
-    align-content: center;
-    position: relative;
+}
+
+main img{
+  display: block;
+  top:0cm;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
 }
 
 @media(max-width: 768px){
