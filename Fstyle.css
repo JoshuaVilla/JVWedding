@@ -248,4 +248,10 @@ main{
     .ascent p{
         font-size: 20px;
     }
+    .ascent dd{
+        font-size: 14px;
+    }
+    .ascent cc{
+        font-size: 22px;
+    }
 }
