@@ -66,6 +66,15 @@
     .container .heading h3{
         font-size:  2em;
     }
+
+    .firstGallery img{
+        object-fit:cover;
+        border:2px solid gold;
+        border-radius:50%;
+        overflow:hidden;
+        width:150px;
+        height:150px;
+    }
     
 }
 /*****************NAVIGATION********************/
@@ -284,6 +293,17 @@ main{
 }
 .gallery p{
     color: gold;
+}
+
+@media(max-width: 768px){
+    .firstGallery img{
+        object-fit:cover;
+        border:2px solid gold;
+        border-radius:50%;
+        overflow:hidden;
+        width:160px;
+        height:160px;
+    }
 }
 
 @media(min-width: 768px) {
