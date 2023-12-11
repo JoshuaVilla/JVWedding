@@ -251,6 +251,24 @@ main{
     min-height: calc(100vh - 54px - 62px);
     
 }
+
+.firstGallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+}
+.firstGallery img{
+    object-fit:cover;
+    border:2px solid gold;
+    border-radius:50%;
+    overflow:hidden;
+    width:200px;
+    height:200px;
+}
+.firstGallery p{
+    color: gold;
+}
+
 .gallery{
     display: grid;
     grid-template-columns: 1fr 1fr;
